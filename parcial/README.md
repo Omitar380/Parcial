@@ -20,7 +20,7 @@ dotnet build
 ```bash
 dotnet run
 ```
-¿Cómo funciona el código?
+## ¿Cómo funciona el código?
 El programa es una aplicación de consola que funciona como un pequeño sistema de ventas e inventario. Toda la información se almacena temporalmente en cuatro listas: una para los nombres de los productos, otra para los precios, otra para el stock disponible y otra para las unidades vendidas. Los datos se mantienen únicamente mientras el programa está ejecutándose.
 
 Al iniciar, el método Main crea las listas y las variables que almacenan el total de ventas y el dinero acumulado en caja. Después muestra un menú dentro de un ciclo do-while. Este ciclo mantiene el programa activo hasta que el usuario selecciona la opción 5, que finaliza la ejecución.
@@ -38,3 +38,14 @@ Después de completar una venta, el programa descuenta las unidades del inventar
 La opción 4 genera un reporte con el número de ventas, el total ingresado a caja, el promedio por venta y el producto con mayor cantidad de unidades vendidas. Si todavía no existen ventas, informa que no hay datos registrados.
 
 Los métodos LeerEntero, LeerDecimal y LeerSiNo validan las entradas del usuario mediante ciclos y métodos como int.TryParse y decimal.TryParse. Esto evita que el programa se cierre cuando el usuario introduce letras, números fuera de rango o valores inválidos. Además, el bloque try-catch del menú captura errores inesperados y muestra un mensaje sin finalizar abruptamente la aplicación.
+
+## Instrucciones de ejecución
+
+1. Clonar el repositorio:
+   git clone https://github.com/Omitar380/Parcial.git
+
+2. Entrar a la carpeta del proyecto:
+   cd Parcial/parcial
+
+3. Ejecutar el proyecto:
+   dotnet run
